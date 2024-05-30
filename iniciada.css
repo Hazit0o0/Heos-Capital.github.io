@@ -1,0 +1,298 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Estilos para el header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Altura fija del header */
+    background-color: #EDB5C3;
+    padding: 20px 0; /* Espaciado interno */
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para el cambio de color */
+}
+/* Estilos para el contenedor del logo */
+.logo-container {
+    float: left; /* Flotar a la izquierda */
+    margin-left: 20px; /* Espacio izquierdo */
+    height: 100%; /* Altura igual al header */
+    line-height: 80px; /* Centra verticalmente el contenido */
+}
+/* Estilos para el logo */
+.logo {
+    max-height: 130px; /* Tamaño máximo del logo */
+    margin-top: -45px;
+    margin-left: 0px;
+}
+nav {
+    float: right; /* Flotar a la derecha */
+    margin-right: 350px; /* Espacio derecho */
+    height: 100%; /* Altura igual al header */
+    line-height: 80px; /* Centra verticalmente los elementos del menú */
+    margin-top: -25px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Hace que los elementos de la lista se alineen en línea */
+}
+
+nav li {
+    margin-right: 35px; /* Espacio entre los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Tamaño del texto */
+}
+
+nav a i {
+    font-size: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #ffffff;
+}
+.nav2 {
+    float: right; /* Flotar a la derecha */
+    margin-right: 0px; /* Espacio derecho */
+    height: 100%; /* Altura igual al header */
+    line-height: 80px; /* Centra verticalmente los elementos del menú */
+    margin-top: -50px;
+}
+.nav2 a {
+    /* Estilos para los enlaces dentro del segundo conjunto */
+    margin-right: -20px; /* Espacio entre los elementos */
+}
+.nombre-usuario {
+    color: #ffffff; /* Cambia el color del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+/* Estilos cuando el header está desplazado */
+.header-scrolled {
+    background-color: #9CAD8C !important;
+    color: #fff !important;
+
+}
+.btn-register{
+    background-color: #EDB5C3;
+    color: #fff;
+    padding: 10px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: -40px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para el cambio de color */
+    text-decoration: none;
+    margin-right: 22px;
+    margin-top: 25px;
+}
+.btn-login {
+    background-color: #ce85f6;
+    color: #fff;
+    padding: 10px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: -40px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para el cambio de color */
+    text-decoration: none;
+    margin-right: 22px;
+    margin-top: 25px;
+}
+.header-scrolled .btn-register,
+.header-scrolled .btn-login {
+    background-color: #9CAD8C !important;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Altura de la sección Hero, ajusta según necesites */
+    background-image: url(Fondos/Fondo1\ \(1\).png); /* Coloca la ruta correcta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    color: #8D265C; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Estilos para el contenido de la sección Hero */
+.image-overlay {
+    position: absolute;
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+    height: 100%; /* Ocupa todo el alto del contenedor padre */
+    z-index: 1; /* Asegura que esté sobre el fondo */
+}
+.image-colibri {
+    position: absolute;
+    width: 13%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    top: 280px; /* Ajusta la posición superior */
+    left: 800px; /* Ajusta la posición izquierda */
+    z-index: 2; /* Asegura que esté sobre otros elementos */
+}
+.img-other {
+    position: absolute;
+    width: 10%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    bottom: 40px; /* Ajusta la posición inferior */
+    left: 250px; /* Ajusta la posición derecha */
+    z-index: 2; /* Asegura que esté sobre otros elementos */
+    top: 120px; /* Ajusta la posición superior */
+}
+.img-inversion {
+    position: absolute;
+    width: 40%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    bottom: 40px; /* Ajusta la posición inferior */
+    left: 850px; /* Ajusta la posición derecha */
+    top: 490px; /* Ajusta la posición superior */
+}
+.hero-content {
+    z-index: 1;
+    position: absolute;
+    top: 30%; /* Lo posiciona verticalmente en el centro */
+    left: 50%; /* Lo posiciona horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Centra el texto exactamente */
+}
+.hero-content h1 {
+    font-size: 38px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior */
+   
+}
+.hero-content p {
+    font-size: 18px; /* Tamaño del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+.hero-content a {
+    background-color: #5869D6; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+.hero-content a:hover {
+    background-color: #ce85f6; /* Cambio de color de fondo al pasar el mouse sobre el botón */
+}
+.left-text-content {
+    max-width: auto; /* Ancho máximo de la columna */
+    margin: 0 auto; /* Centra la columna horizontalmente */
+    margin-top: 800px;
+    padding: 20px; /* Espacio alrededor del contenido */
+    background-color: #f9f9f9; /* Color de fondo de la columna */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    height: 400px; /* Altura de la columna */
+    text-align: left;
+    
+}
+
+.left-text-content h2 {
+    font-size: 27px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+    color: #71b1a8;
+}
+
+.left-text-content p {
+    font-size: 17px; /* Tamaño del texto */
+    margin-bottom: 5px; /* Espacio inferior del texto */
+    margin-top: 0px;
+    width: 830px;
+    line-height: 1.8;
+    color:#333;
+}
+.left-text-content ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.left-text-content ul li {
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+    width: 900px;
+    line-height: 1.5;
+    color:#333;
+    font-size: 17px; /* Tamaño del texto */
+}
+/* Estilos para el footer */
+footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-column {
+    flex-basis: 25%;
+    text-align: left;
+    padding: 0 20px;
+}
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-logo{
+    max-width: 90%; /* Ajusta el tamaño máximo del logo al 100% del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    display: block;
+    margin: -10px 20px; /* Centra el logo horizontalmente */
+}
+.social-media-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.social-media-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media-icons img {
+    width: 40px; /* Ajusta el tamaño según tus necesidades */
+    height: 40px; /* Asegura que las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Asegura que las imágenes mantengan su aspecto */
+}
+.social-media-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.highlight{
+    color: #204b50; /* Cambia el color de fondo según tus preferencias */
+    font-weight: bold; /* Otras opciones de estilo, como negrita */
+    font-size: 20px;
+}

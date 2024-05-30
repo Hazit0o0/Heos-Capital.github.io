@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(Fondos/Fondo\ 7.png);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-group input[type="submit"] {
+    background-color: #8D265C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #9CAD8C;
+}
+
+/* Checkbox and label in line */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+.input-group label[for="rememberMe"] {
+    display: inline-block;
+    color: #000000;
+}
+/* Links styles */
+.forgot-password, .register {
+    margin-top: 15px;
+}
+
+.forgot-password a, .register a {
+    color: #9CAD8C;
+    text-decoration: none;
+}
+
+.forgot-password a:hover, .register a:hover {
+    text-decoration: underline;
+}
+
+/* Alert styles */
+.success, .error {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.success {
+    background-color: #9CAD8C;
+}
+
+.error {
+    background-color: #f44336;
+}

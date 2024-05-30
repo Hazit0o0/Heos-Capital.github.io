@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Fondos/Fondo\ 15.png);
+    background-size:cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 630px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option-container:hover {
+    background-color: #f1f1f1;
+}
+
+.option-container input {
+    margin-right: 10px;
+}
+
+.option-container .option {
+    flex-grow: 1;
+}
+
+.option-container input:checked + .option {
+    background-color: #e1cedc;
+    color: #000000;
+    font-weight: bold; 
+    border-color: #e1cedc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .next-btn{
+    background-color: #ce85f6;
+    color: #fff;
+}
+.start-next-btn {
+    background-color: #8D265C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons .prev-btn {
+    background-color: #666;
+    color: #fff;
+}
+
+.buttons .submit-btn {
+    background-color: #8D265C;
+    color: #fff;
+    display: none;
+}
+/* Estilo para ajustar los campos de entrada al contenedor del formulario */
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #666;
+}
+/* Estilo para las etiquetas de nombre y correo electrónico */
+.user-info-label {
+    color: #666; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 16px;
+}
+
